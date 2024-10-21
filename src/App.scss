@@ -1,0 +1,25 @@
+.webPage{
+  min-height: 100vh;
+}
+.appContext{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  padding: 7rem 2rem 2rem 4rem;
+  transition: margin-left .2s;
+  margin-left: 300px;
+}
+/* 平板 */
+@media screen and (max-width: 990px) {
+  /* CSS规则 */
+  .appContext{
+    margin-left:0;
+    padding: 7rem 2rem 2rem 2rem;
+  }
+}
+
+/* 小型笔记本电脑到大型笔记本电脑和桌面显示器 */
+@media screen and (min-width: 991px){
+  /* CSS规则 */
+}

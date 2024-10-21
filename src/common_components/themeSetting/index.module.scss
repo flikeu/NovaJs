@@ -1,0 +1,13 @@
+.button{
+  padding:5px;
+  position:fixed;
+  z-index: 1000;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:#06b6d4;
+  border-radius:1px 0 0 1px;
+}
+.button:hover{
+  background-color: #0ea5c1;
+}
