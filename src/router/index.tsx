@@ -10,7 +10,7 @@ export const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App></App>}>
-          <Route element={<Navigate to={"/index"} />}></Route>
+          <Route index element={<Navigate to={"/index"} />}></Route>
           <Route path="index" element={<Index />}></Route>
           <Route path="goods" element={<Goods />}></Route>
           <Route path="goods/:params?" element={<GoodsDetail />}></Route>

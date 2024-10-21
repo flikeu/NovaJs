@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 import { MyContext } from "@/App.tsx";
 import { useContext } from "react";
-
+import classnames from "classnames";
 export const AppTopBar = () => {
   const appSide = useContext(MyContext);
 
@@ -21,9 +21,10 @@ export const AppTopBar = () => {
   };
   return (
     <div className={styles.appTopBarShow}>
-      <button onClick={changeAppSideBar} className={styles.button}>
-        {appSideShow ? "true" : "false"}
-      </button>
+      <i
+        className={classnames("pi pi-align-left", styles.pi_caret_right)}
+        onClick={changeAppSideBar}
+      ></i>
     </div>
   );
 };

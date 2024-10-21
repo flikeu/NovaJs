@@ -12,14 +12,25 @@
   align-items: center;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .02), 0 0 2px rgba(0, 0, 0, .05), 0 1px 4px rgba(0, 0, 0, .08);
 }
-.button{
-  width:40px;
-  height:40px;
-  background-color: red;
-  border-radius: 20px;
+.pi_caret_right{
+  padding:8px;
+  display:block;
+  color:gray;
+  font-Size: 1.2rem;
+  border-radius:50%;
+  transition: color .2s, background-color .2s;
 }
+.pi_caret_right:hover{
+  color:#11999e;
+  background-color: rgba(128, 128, 128, 0.09);
+}
+
+
 /* 平板 */
 @media screen and (max-width: 990px) {
+  .pi_caret_right{
+    display:none;
+  }
   /* CSS规则 */
 }
 
